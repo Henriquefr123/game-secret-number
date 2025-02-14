@@ -37,10 +37,10 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() * numeroLimite);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeDeElementoNalista = listaDeNumerosSorteados.length;
 
-    if (quantidadeDeElementoNalista == numeroLimite) {
+    if (quantidadeDeElementoNalista == numeroLimite + 1) {
         listaDeNumerosSorteados = [];
     }
 
